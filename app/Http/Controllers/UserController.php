@@ -39,7 +39,7 @@ class UserController extends Controller
      */
     public function show(User $user)
     {
-        return view('show');
+        return view('show', compact('user'));
     }
 
     /**
