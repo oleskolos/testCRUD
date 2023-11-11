@@ -21,14 +21,20 @@
         <div class="mb-3">
             <label for="formGroupExampleInput" class="form-label">Enter your name</label>
             <input 
-            value="{{ isset($user) ? $user->name : null }}"
+            value="{{ old('name', isset($user) ? $user->name : null) }}"
             name="name" type="text" class="form-control" id="formGroupExampleInput" placeholder="Name">
+            @error('name')
+                <div class="alert alert-danger">{{ $message }}</div>
+            @enderror
         </div>
         <div class="mb-3">
             <label for="formGroupExampleInput2" class="form-label">Enter your email</label>
             <input
-            value="{{ isset($user) ? $user->email : null }}"
+            value="{{ old('email', isset($user) ? $user->email : null) }}"
             name="email" type="text" class="form-control" id="formGroupExampleInput2" placeholder="Email">
+            @error('email')
+                <div class="alert alert-danger">{{ $message }}</div>
+            @enderror
         </div>
 
         <button type="submit" class="btn btn-success">{{ isset($user) ? 'Update' : 'Create' }}</button>

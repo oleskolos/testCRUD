@@ -4,8 +4,8 @@
 
 @section('content')
 
-    <a role="button" class="btn btn-primary" href="{{ route('users.create') }}">Create user</a>
-    <table class="table">
+    <a role="button" class="btn btn-primary mt-3" href="{{ route('users.create') }}">Create user</a>
+    <table class="table mt-3">
     <thead>
         <tr>
         <th scope="col">#</th>
