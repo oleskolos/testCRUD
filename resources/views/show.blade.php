@@ -1,7 +1,7 @@
 @extends('layout')
 
 
-@section('title', 'Users ' .$user->name)
+@section('title', 'User ' .$user->name)
 
 @section('content')
 <a type="button" class="btn btn-secondary mt-3" href="{{ route('users.index') }}">Back to users</a>
