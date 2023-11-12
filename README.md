@@ -8,7 +8,7 @@ next: installing composer
 
 next: choose path (cd laravel-8/laravel-8)
 
-git clone your folder
+git clone https://github.com/oleskolos/testCRUD your folder
 
 cd your folder
 
